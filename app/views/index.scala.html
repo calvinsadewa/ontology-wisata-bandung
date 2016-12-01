@@ -1,0 +1,36 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+
+    @*
+     * Get an `Html` object by calling the built-in Play welcome
+     * template and passing a `String` message.
+     *@
+    <script type='text/javascript' src='@routes.Assets.versioned("javascripts/index.js")'></script>
+    <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Test</a>
+            <form id="lookclassinstances" class="navbar-form pull-right">
+                <input id="classname" type="text" class="span2" placeholder="Kelas" value="Desa">
+                <button type="submit" class="btn">Ambil Instances</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div id="instances" class="container">
+
+    </div>
+
+}
+

@@ -1,0 +1,1145 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#Desa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fasilitas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kecamatan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lokasi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pariwisata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penginapan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WisataAlam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WisataBelanja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WisataKuliner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WisataRekreasi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WisataSejarah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wisma"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#beradaDi"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memiliki"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memilikiDesa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#alamat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deskripsi"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foto"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nama"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telepon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Andir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bandung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bandung_Wetan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Batununggal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bojongloa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Braga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cibaduyut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cibangkong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cibeunying_Kidul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cicadas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cikutra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cisarua"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Citarum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coblong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Curug_Malela"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FasilitasParkir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Internet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Isola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kebon_Jeruk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kebon_Pisang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kertawangi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KolamRenang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Merdeka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MiniBar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restoran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rongga_Gununghalu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sauna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sukajadi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Villa_Isola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Desa"/>
+        <Class IRI="#Lokasi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fasilitas"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Penginapan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kecamatan"/>
+        <Class IRI="#Lokasi"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lokasi"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pariwisata"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penginapan"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penginapan"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#memiliki"/>
+            <Class IRI="#Fasilitas"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WisataAlam"/>
+        <Class IRI="#Pariwisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WisataBelanja"/>
+        <Class IRI="#Pariwisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WisataKuliner"/>
+        <Class IRI="#Pariwisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WisataRekreasi"/>
+        <Class IRI="#Pariwisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WisataSejarah"/>
+        <Class IRI="#Pariwisata"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WisataSejarah"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#beradaDi"/>
+            <Class IRI="#Desa"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wisma"/>
+        <Class IRI="#Penginapan"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Andir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Bandung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Bandung_Wetan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataKuliner"/>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Batununggal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Bojongloa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Braga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Cibaduyut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Cibangkong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Cibeunying_Kidul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Cicadas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Cikutra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Cisarua"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Citarum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Coblong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataAlam"/>
+        <NamedIndividual IRI="#Curug_Malela"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataAlam"/>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasilitas"/>
+        <NamedIndividual IRI="#FasilitasParkir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Hotel"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasilitas"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Isola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Kebon_Jeruk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Kebon_Pisang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Kertawangi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasilitas"/>
+        <NamedIndividual IRI="#KolamRenang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Desa"/>
+        <NamedIndividual IRI="#Merdeka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasilitas"/>
+        <NamedIndividual IRI="#MiniBar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataBelanja"/>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataBelanja"/>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasilitas"/>
+        <NamedIndividual IRI="#Restoran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Rongga_Gununghalu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fasilitas"/>
+        <NamedIndividual IRI="#Sauna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Sukajadi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Kecamatan"/>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataRekreasi"/>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataRekreasi"/>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataSejarah"/>
+        <NamedIndividual IRI="#Villa_Isola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Wisma"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WisataKuliner"/>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Andir"/>
+        <NamedIndividual IRI="#Kebon_Jeruk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Bandung"/>
+        <NamedIndividual IRI="#Coblong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Bandung_Wetan"/>
+        <NamedIndividual IRI="#Citarum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+        <NamedIndividual IRI="#Kebon_Pisang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Batununggal"/>
+        <NamedIndividual IRI="#Cibangkong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Bojongloa"/>
+        <NamedIndividual IRI="#Cibaduyut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Braga"/>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Cibaduyut"/>
+        <NamedIndividual IRI="#Bojongloa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Cibangkong"/>
+        <NamedIndividual IRI="#Batununggal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Cibeunying_Kidul"/>
+        <NamedIndividual IRI="#Cikutra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Cicadas"/>
+        <NamedIndividual IRI="#Rongga_Gununghalu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Cikutra"/>
+        <NamedIndividual IRI="#Cibeunying_Kidul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Cisarua"/>
+        <NamedIndividual IRI="#Kertawangi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Citarum"/>
+        <NamedIndividual IRI="#Bandung_Wetan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Coblong"/>
+        <NamedIndividual IRI="#Bandung"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Curug_Malela"/>
+        <NamedIndividual IRI="#Cicadas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+        <NamedIndividual IRI="#Kertawangi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <NamedIndividual IRI="#Braga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <NamedIndividual IRI="#Sauna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <NamedIndividual IRI="#FasilitasParkir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <NamedIndividual IRI="#Restoran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <NamedIndividual IRI="#KolamRenang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <NamedIndividual IRI="#Bandung"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <NamedIndividual IRI="#KolamRenang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <NamedIndividual IRI="#FasilitasParkir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <NamedIndividual IRI="#MiniBar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <NamedIndividual IRI="#Sauna"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <NamedIndividual IRI="#Restoran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <NamedIndividual IRI="#Braga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <NamedIndividual IRI="#Restoran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <NamedIndividual IRI="#KolamRenang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <NamedIndividual IRI="#FasilitasParkir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Isola"/>
+        <NamedIndividual IRI="#Sukajadi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Kebon_Jeruk"/>
+        <NamedIndividual IRI="#Andir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Kebon_Pisang"/>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Kertawangi"/>
+        <NamedIndividual IRI="#Cisarua"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <NamedIndividual IRI="#Merdeka"/>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+        <NamedIndividual IRI="#Kebon_Jeruk"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+        <NamedIndividual IRI="#Cibaduyut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Rongga_Gununghalu"/>
+        <NamedIndividual IRI="#Cicadas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Sukajadi"/>
+        <NamedIndividual IRI="#Isola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+        <NamedIndividual IRI="#Braga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+        <NamedIndividual IRI="#Merdeka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <NamedIndividual IRI="#Sumur_Bandung"/>
+        <NamedIndividual IRI="#Kebon_Pisang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+        <NamedIndividual IRI="#Merdeka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+        <NamedIndividual IRI="#Cibangkong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Villa_Isola"/>
+        <NamedIndividual IRI="#Isola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <NamedIndividual IRI="#Cikutra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#memiliki"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <NamedIndividual IRI="#FasilitasParkir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#beradaDi"/>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+        <NamedIndividual IRI="#Citarum"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Veteran No. 25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Makanan khas kota bandung. Luarnya renyah dengan balutan adonan llembut di dalam di tambah siraman saus kacang.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://tempatwisatadibandung.info/batagor-kingsley-bandung/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Batagor Kingsley</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Batagor_Kingsley"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 4207104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Curug_Malela"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Desa Cicadas, kecamatan Rongga Gununghalu, kabupaten Bandung barat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Curug_Malela"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Curug Malela - Pesona Niagara Mini Bandung. Air terjun curug malela memiliki ketinggian hampir 60 meter, dengan lebar air terjun 70 meter serta mempunyai 5 buah jalur air terjun yang menciptakan sensasi keindahan.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Curug_Malela"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://tempatwisatadibandung.info/curug-malela/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Curug_Malela"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Curug Malela</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Curug_Malela"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Kertawangi Kompleks Komando Cisarua Barat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Berada di kaki gunung tangkuban perahu dan juga pegunungan burangrang yang masih sangat asri yang dikenal sebagai kawasan wisata hutan kota bandung yang berhawa sangat sejuk di siang hari dan dingin di malam hari.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://dusunbambu.com/home</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Dusun Bambu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Dusun_Bambu"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 82782020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Asia Afrika No 81 Bandung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Grand Preanger Hotel is a 4-star property in the heart of Bandung. The elegent building was renovated in 1995 and now combines art deco architecture with modern technology.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://grand-preanger.bandung-hotel.com/en/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hotel Grand Preanger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Hotel_Grand_Preanger"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 4231631</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Ir. H. Juanda 381 A Bandung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A magnificent located hotel and resort. The Jayakarta Bandung Hotel is perched above the highland city of Bandung, providing sweeping views of the centre city and surrounding mountains.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://bandung.jayakartahotelsresorts.com/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hotel Jayakarta Bandung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Hotel_Jayakarta_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 250 5888</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Asia Afrika No 112 Bandung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The new look of Savoy Homann Hotel with a unique combination of style, elegance and tropical deco combined with today&apos;s luxury standards and facilities provide the comfort and aesthetics the discerning traveller&apos;s demand even today.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://savoyhomann-hotel.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hotel Savoy Homann</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Hotel_Savoy_Homann"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 4232244</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Otto Iskandardinata No. 70</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Belanja murah di pasar baru bandung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.tempatwisatadijawabarat.com/2014/03/belanja-murah-di-pasar-baru-bandung.html</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pasar Baru Trade Center</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Pasar_Baru_Trade_Center"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 4245555</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Cibaduyut Raya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pasar Cibaduyut adalah pusatnya tas dan sepatu dengan bahan kulit. </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://tempatwisatadibandung.info/cibaduyut/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pasar Cibaduyut</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Pasar_Cibaduyut"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">-</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Belitung No. 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tempat wisata di bandung yang memberikan tempat refreshiing dan bermain anak yang bagus dan menarik.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://tamanlalulintasbandung.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Taman Lalu Lintas Ade Irma Suryani</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Taman_Lalu_Lintas_Ade_Irma_Suryani"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 4201667</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Jendral Gatot Subroto No. 289</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">TRANS STUDIO BANDUNG adalah indoor theme park terbesar kedua di Indonesia setelah Makasar. Menyajikan 20 wahana permainan dan bermacam bentuk hiburan yang terdapat dalam 3 kawasan dengan temam yang berbeda dan unik.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://www.transstudiobandung.com/bahasa/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Trans Studio Bandung</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Trans_Studio_Bandung"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 86012000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Villa_Isola"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Dr. Setiabudi No. 229</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Villa_Isola"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Villa Isola terletak di dalam Universitas Pendidikan Indonesia. Gedung ini dirancang oleh C.P.Wolff Schoemaker.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Villa_Isola"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://tempatwisatadibandung.info/villa-isola/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Villa_Isola"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Villa Isola</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Villa_Isola"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 2013163</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Cikutra No. 99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Akomodasi yang  nyaman bagi backpaker di Bandung. Memilliki kemudahan akses untuk menjelajahi banyak tujuan wisata di Bandung.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://wikimapia.org/26102415/WISMA-AMANAH-Building-Guest-House-Training-House/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Wisma Amanah</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Wisma_Amanah"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 7276475</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#alamat"/>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jl. Cisangkuy No. 66</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#deskripsi"/>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Memiliki citarasa yang unik, tidak asam dan memiliki berbagai varian rasa. </Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#foto"/>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">http://tempatwisatadibandung.iinfo/yoghurt-cisangkuy-surapati-bandung/</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nama"/>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Yoghurt Cisangkuy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telepon"/>
+        <NamedIndividual IRI="#Yoghurt_Cisangkuy"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">+62 22 7273956</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <ObjectProperty IRI="#memilikiDesa"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#beradaDi"/>
+        <ObjectUnionOf>
+            <Class IRI="#Pariwisata"/>
+            <Class IRI="#Penginapan"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memiliki"/>
+        <ObjectUnionOf>
+            <Class IRI="#Pariwisata"/>
+            <Class IRI="#Penginapan"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <Class IRI="#Kecamatan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <Class IRI="#Desa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#beradaDi"/>
+        <Class IRI="#Desa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memiliki"/>
+        <Class IRI="#Fasilitas"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memilikiDesa"/>
+        <Class IRI="#Desa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#memilikiKecamatan"/>
+        <Class IRI="#Kecamatan"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deskripsi"/>
+        <ObjectUnionOf>
+            <Class IRI="#Hotel"/>
+            <Class IRI="#WisataAlam"/>
+            <Class IRI="#WisataBelanja"/>
+            <Class IRI="#WisataKuliner"/>
+            <Class IRI="#WisataRekreasi"/>
+            <Class IRI="#WisataSejarah"/>
+            <Class IRI="#Wisma"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foto"/>
+        <ObjectUnionOf>
+            <Class IRI="#Hotel"/>
+            <Class IRI="#WisataAlam"/>
+            <Class IRI="#WisataBelanja"/>
+            <Class IRI="#WisataKuliner"/>
+            <Class IRI="#WisataRekreasi"/>
+            <Class IRI="#WisataSejarah"/>
+            <Class IRI="#Wisma"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nama"/>
+        <ObjectUnionOf>
+            <Class IRI="#Desa"/>
+            <Class IRI="#Hotel"/>
+            <Class IRI="#Kecamatan"/>
+            <Class IRI="#WisataAlam"/>
+            <Class IRI="#WisataBelanja"/>
+            <Class IRI="#WisataKuliner"/>
+            <Class IRI="#WisataRekreasi"/>
+            <Class IRI="#WisataSejarah"/>
+            <Class IRI="#Wisma"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telepon"/>
+        <ObjectUnionOf>
+            <Class IRI="#Hotel"/>
+            <Class IRI="#Wisma"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#deskripsi"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#foto"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nama"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telepon"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

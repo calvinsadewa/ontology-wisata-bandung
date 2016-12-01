@@ -1,0 +1,761 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28"
+     xml:base="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-28="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#beradaDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#beradaDi">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Penginapan"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memiliki -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memiliki">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Penginapan"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memilikiDesa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memilikiDesa">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memilikiKecamatan"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memilikiKecamatan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memilikiKecamatan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#alamat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#alamat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#deskripsi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#deskripsi">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataAlam"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataBelanja"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataKuliner"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataRekreasi"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataSejarah"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#foto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#foto">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataAlam"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataBelanja"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataKuliner"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataRekreasi"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataSejarah"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#nama -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#nama">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataAlam"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataBelanja"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataKuliner"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataRekreasi"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataSejarah"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#telepon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#telepon">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Lokasi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Penginapan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Lokasi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Lokasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Lokasi">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Penginapan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Penginapan">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memiliki"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataAlam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataAlam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataBelanja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataBelanja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataKuliner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataKuliner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataRekreasi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataRekreasi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataSejarah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataSejarah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pariwisata"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#beradaDi"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Penginapan"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Andir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Andir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Jeruk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bandung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Coblong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bandung_Wetan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bandung_Wetan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Citarum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Batagor_Kingsley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Batagor_Kingsley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataKuliner"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Pisang"/>
+        <untitled-ontology-28:alamat>Jl. Veteran No. 25</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Makanan khas kota bandung. Luarnya renyah dengan balutan adonan llembut di dalam di tambah siraman saus kacang.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://tempatwisatadibandung.info/batagor-kingsley-bandung/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Batagor Kingsley</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 4207104</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Batununggal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Batununggal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibangkong"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bojongloa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bojongloa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibaduyut"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Braga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Braga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sumur_Bandung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibaduyut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibaduyut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bojongloa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibangkong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibangkong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Batununggal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibeunying_Kidul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibeunying_Kidul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cikutra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cicadas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cicadas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Rongga_Gununghalu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cikutra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cikutra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibeunying_Kidul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cisarua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cisarua">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kertawangi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Citarum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Citarum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bandung_Wetan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Coblong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Coblong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bandung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Curug_Malela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Curug_Malela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataAlam"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cicadas"/>
+        <untitled-ontology-28:alamat>Desa Cicadas, kecamatan Rongga Gununghalu, kabupaten Bandung barat</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Curug Malela - Pesona Niagara Mini Bandung. Air terjun curug malela memiliki ketinggian hampir 60 meter, dengan lebar air terjun 70 meter serta mempunyai 5 buah jalur air terjun yang menciptakan sensasi keindahan.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://tempatwisatadibandung.info/curug-malela/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Curug Malela</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>-</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Dusun_Bambu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Dusun_Bambu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataAlam"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kertawangi"/>
+        <untitled-ontology-28:alamat>Jl. Kertawangi Kompleks Komando Cisarua Barat</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Berada di kaki gunung tangkuban perahu dan juga pegunungan burangrang yang masih sangat asri yang dikenal sebagai kawasan wisata hutan kota bandung yang berhawa sangat sejuk di siang hari dan dingin di malam hari.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://dusunbambu.com/home</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Dusun Bambu</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 82782020</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#FasilitasParkir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#FasilitasParkir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel_Grand_Preanger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel_Grand_Preanger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Braga"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#FasilitasParkir"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Internet"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#KolamRenang"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Restoran"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sauna"/>
+        <untitled-ontology-28:alamat>Jl. Asia Afrika No 81 Bandung</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Grand Preanger Hotel is a 4-star property in the heart of Bandung. The elegent building was renovated in 1995 and now combines art deco architecture with modern technology.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://grand-preanger.bandung-hotel.com/en/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Hotel Grand Preanger</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 4231631</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel_Jayakarta_Bandung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel_Jayakarta_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Bandung"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#FasilitasParkir"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Internet"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#KolamRenang"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#MiniBar"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Restoran"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sauna"/>
+        <untitled-ontology-28:alamat>Jl. Ir. H. Juanda 381 A Bandung</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>A magnificent located hotel and resort. The Jayakarta Bandung Hotel is perched above the highland city of Bandung, providing sweeping views of the centre city and surrounding mountains.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://bandung.jayakartahotelsresorts.com/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Hotel Jayakarta Bandung</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 250 5888</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel_Savoy_Homann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel_Savoy_Homann">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Hotel"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Braga"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#FasilitasParkir"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Internet"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#KolamRenang"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Restoran"/>
+        <untitled-ontology-28:alamat>Jl. Asia Afrika No 112 Bandung</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>The new look of Savoy Homann Hotel with a unique combination of style, elegance and tropical deco combined with today&apos;s luxury standards and facilities provide the comfort and aesthetics the discerning traveller&apos;s demand even today.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://savoyhomann-hotel.com</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Hotel Savoy Homann</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 4232244</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Internet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Internet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Isola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Isola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sukajadi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Jeruk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Jeruk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Andir"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Pisang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Pisang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sumur_Bandung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kertawangi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kertawangi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cisarua"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#KolamRenang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#KolamRenang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Merdeka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Merdeka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Desa"/>
+        <untitled-ontology-28:memilikiKecamatan rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sumur_Bandung"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#MiniBar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#MiniBar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pasar_Baru_Trade_Center -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pasar_Baru_Trade_Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataBelanja"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Jeruk"/>
+        <untitled-ontology-28:alamat>Jl. Otto Iskandardinata No. 70</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Belanja murah di pasar baru bandung</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://www.tempatwisatadijawabarat.com/2014/03/belanja-murah-di-pasar-baru-bandung.html</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Pasar Baru Trade Center</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 4245555</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pasar_Cibaduyut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Pasar_Cibaduyut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataBelanja"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibaduyut"/>
+        <untitled-ontology-28:alamat>Jl. Cibaduyut Raya</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Pasar Cibaduyut adalah pusatnya tas dan sepatu dengan bahan kulit. </untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://tempatwisatadibandung.info/cibaduyut/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Pasar Cibaduyut</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>-</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Restoran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Restoran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Rongga_Gununghalu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Rongga_Gununghalu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cicadas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sauna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sauna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Fasilitas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sukajadi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sukajadi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Isola"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sumur_Bandung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Sumur_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kecamatan"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Braga"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Kebon_Pisang"/>
+        <untitled-ontology-28:memilikiDesa rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Merdeka"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Taman_Lalu_Lintas_Ade_Irma_Suryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Taman_Lalu_Lintas_Ade_Irma_Suryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataRekreasi"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Merdeka"/>
+        <untitled-ontology-28:alamat>Jl. Belitung No. 1</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Tempat wisata di bandung yang memberikan tempat refreshiing dan bermain anak yang bagus dan menarik.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://tamanlalulintasbandung.com</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Taman Lalu Lintas Ade Irma Suryani</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 4201667</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Trans_Studio_Bandung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Trans_Studio_Bandung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataRekreasi"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cibangkong"/>
+        <untitled-ontology-28:alamat>Jl. Jendral Gatot Subroto No. 289</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>TRANS STUDIO BANDUNG adalah indoor theme park terbesar kedua di Indonesia setelah Makasar. Menyajikan 20 wahana permainan dan bermacam bentuk hiburan yang terdapat dalam 3 kawasan dengan temam yang berbeda dan unik.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://www.transstudiobandung.com/bahasa/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Trans Studio Bandung</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 86012000</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Villa_Isola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Villa_Isola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataSejarah"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Isola"/>
+        <untitled-ontology-28:alamat>Jl. Dr. Setiabudi No. 229</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Villa Isola terletak di dalam Universitas Pendidikan Indonesia. Gedung ini dirancang oleh C.P.Wolff Schoemaker.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://tempatwisatadibandung.info/villa-isola/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Villa Isola</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 2013163</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma_Amanah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma_Amanah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Wisma"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Cikutra"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#FasilitasParkir"/>
+        <untitled-ontology-28:memiliki rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Internet"/>
+        <untitled-ontology-28:alamat>Jl. Cikutra No. 99</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Akomodasi yang  nyaman bagi backpaker di Bandung. Memilliki kemudahan akses untuk menjelajahi banyak tujuan wisata di Bandung.</untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://wikimapia.org/26102415/WISMA-AMANAH-Building-Guest-House-Training-House/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Wisma Amanah</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 7276475</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Yoghurt_Cisangkuy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Yoghurt_Cisangkuy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#WisataKuliner"/>
+        <untitled-ontology-28:beradaDi rdf:resource="http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#Citarum"/>
+        <untitled-ontology-28:alamat>Jl. Cisangkuy No. 66</untitled-ontology-28:alamat>
+        <untitled-ontology-28:deskripsi>Memiliki citarasa yang unik, tidak asam dan memiliki berbagai varian rasa. </untitled-ontology-28:deskripsi>
+        <untitled-ontology-28:foto>http://tempatwisatadibandung.iinfo/yoghurt-cisangkuy-surapati-bandung/</untitled-ontology-28:foto>
+        <untitled-ontology-28:nama>Yoghurt Cisangkuy</untitled-ontology-28:nama>
+        <untitled-ontology-28:telepon>+62 22 7273956</untitled-ontology-28:telepon>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
