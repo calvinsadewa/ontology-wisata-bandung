@@ -1,0 +1,1 @@
+web: target/universal/stage/bin/ontology-wisata-bandung -Dhttp.port=${PORT}
