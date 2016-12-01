@@ -1,7 +1,0 @@
-New log file opened at Thu Dec 01 18:47:53 ICT 2016 by 4976@S451LN-Calvin
-Taking next connection to: 59148
-New client attempting to connect on port: 59149-59148
-  Address = /192.168.189.57:59148
-This client on port 59149 has uuid 89b5458a-3a04-418d-b36b-79261b166952 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-89b5458a-3a04-418d-b36b-79261b166952
-Taking next connection to: 59148

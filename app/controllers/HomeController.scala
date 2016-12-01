@@ -33,13 +33,8 @@ class HomeController @Inject() (ontologyProvider: OntologyProvider) extends Cont
   def getInstances(ontologyClass: String) = Action.async{
     val model = ontologyProvider.model
     val artefact = model.getOntClass( baseURI + ontologyClass );
-    val results = artefact.listInstances().toList
-      .map( m =>
-        m.listProperties().filter(_.getObject.toString != "http://www.w3.org/2002/07/owl#NamedIndividual")
-          .foldLeft(Json.obj("uri" -> m.getURI, "local_name" -> m.getLocalName))
-          ((js,s) =>
-            js + (s.getPredicate.getLocalName -> JsString(s.getObject.toString)))
-      )
+    val results = artefact.listInstances().toList.filterNot(_.getURI == null)
+      .map( m => ontologyProvider.instanceToJson(m) )
 
     Future(Ok(Json.toJson(results)))
   }
@@ -47,11 +42,9 @@ class HomeController @Inject() (ontologyProvider: OntologyProvider) extends Cont
   def getInstance(instanceName: String) = Action.async{
     val model = ontologyProvider.model
     val artefact = model.getOntResource( baseURI + instanceName )
-    val result = artefact.listProperties().filter(_.getObject.toString != "http://www.w3.org/2002/07/owl#NamedIndividual")
-      .foldLeft(Json.obj("uri" -> artefact.getURI))((js:JsObject,s:Statement) =>
-        js + (s.getPredicate.getLocalName -> JsString(s.getObject.toString)))
+    val result = ontologyProvider.instanceToJson(artefact)
 
-    Future(Ok(Json.toJson(result)))
+    Future(Ok(result))
   }
 
 }
