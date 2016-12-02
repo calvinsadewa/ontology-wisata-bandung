@@ -38,7 +38,7 @@ class HomeController @Inject() (ontologyProvider: OntologyProvider) extends Cont
   }
 
   def DLQuery (query:String)  = Action.async{
-    val individuals = ontologyProvider.DLInference( query );
+    val individuals = ontologyProvider.DLInference( java.net.URLDecoder.decode(query, "UTF-8") );
     val results = individuals
       .map( m => ontologyProvider.individualToJson(m) )
 
