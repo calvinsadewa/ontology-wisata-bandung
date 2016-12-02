@@ -12,7 +12,9 @@ libraryDependencies ++= Seq(
   ws,
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test,
   "org.apache.jena" % "jena-core" % "3.1.1",
-  "org.apache.jena" % "jena-arq" % "3.1.1"
+  "org.apache.jena" % "jena-arq" % "3.1.1",
+  "net.sourceforge.owlapi" % "owlapi-distribution" % "5.0.4",
+  "net.sourceforge.owlapi" % "org.semanticweb.hermit" % "1.3.8.500"
 )
 
 

@@ -3,6 +3,7 @@ package controllers
 import javax.inject._
 
 import org.apache.jena.rdf.model.Statement
+import org.semanticweb.owlapi.model.IRI
 import play.api._
 import play.api.mvc._
 import play.api.libs.json._
@@ -45,6 +46,21 @@ class HomeController @Inject() (ontologyProvider: OntologyProvider) extends Cont
     val result = ontologyProvider.instanceToJson(artefact)
 
     Future(Ok(result))
+  }
+
+  def getIndividual(individualName: String) = Action.async{
+    val individual = ontologyProvider.getIndividual(IRI.create(baseURI + individualName))
+    val result = ontologyProvider.individualToJson(individual)
+
+    Future(Ok(result))
+  }
+
+  def DLQuery (query:String)  = Action.async{
+    val individuals = ontologyProvider.DLInference( query );
+    val results = individuals
+      .map( m => ontologyProvider.individualToJson(m) )
+
+    Future(Ok(Json.toJson(results)))
   }
 
 }
