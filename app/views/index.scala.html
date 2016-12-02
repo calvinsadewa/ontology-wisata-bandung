@@ -20,10 +20,25 @@
     <div class="navbar-inner">
         <div class="container">
             <a class="brand" href="#">Test</a>
-            <form id="lookclassinstances" class="navbar-form pull-right">
+            <form action="/" method="Get" class="navbar-form pull-right">
                 <div class="form-group">
-                    <label for="dlquery">DLQuery</label>
-                    <input id="dlquery" type="text" class="span2" placeholder="Desa or Kecamatan" value="">
+                    <label >Pilih Kelas</label>
+                    <select name="query">
+                      <option value="Desa">Desa</option>
+                      <option value="Kecamatan">Kecamatan</option>
+                      <option value="Lokasi">Lokasi</option>
+                      <option value="Pariwisata">Pariwisata</option>
+                      <option value="Penginapan">Penginapan</option>
+                      <option value="Hotel">Hotel</option>
+                      <option value="Wisama">Wisma</option>
+                    </select> 
+                </div>
+                <button type="submit" class="btn">Lihat</button>
+            </form>
+            <form action="/" method="Get" class="navbar-form pull-right">
+                <div class="form-group">
+                    <label >DLQuery</label>
+                    <input type="text" class="span2" name="query" placeholder="Desa or Kecamatan" value="">
                 </div>
                 <button type="submit" class="btn">Ambil Instances</button>
             </form>

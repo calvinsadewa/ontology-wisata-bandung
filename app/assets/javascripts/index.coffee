@@ -1,8 +1,4 @@
 $ ->
-  $("#lookclassinstances").submit (event) ->
-    event.preventDefault()
-    # send the message to watch the stock
-    queryInstances($("#dlquery").val())
   ajaxServer(decodeURIComponent(getParams()["query"])) if getParams()["query"] 
 
 queryInstances = (query) ->
@@ -18,7 +14,7 @@ ajaxServer = (query) ->
       instances = $("#instances")
       instances.empty()
       for d in data
-        classes = links = $("<span>") \
+        classes = $("<span>") \
           .append($("<a>").text(imar["name"]).attr "href", '/?query='+encodeURIComponent(imar["name"])) \
           for imar in d["class_property"]
         panel = $("<div>").addClass("panel").addClass("panel-default")
