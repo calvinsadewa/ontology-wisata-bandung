@@ -10,8 +10,9 @@ $ ->
         instances = $("#instances")
         instances.empty()
         for d in data
+          classes = item["name"] for item in d["class_property"]
           panel = $("<div>").addClass("panel").addClass("panel-default")
-          panelHead = $("<div>").addClass("panel-heading").text(d['local_name'])
+          panelHead = $("<div>").addClass("panel-heading").text(d['local_name'] + ':' + classes)
           panelBody = $("<div>").addClass("panel-body")
           for k,v of d["object_property"]
             names = item["name"] for item in v

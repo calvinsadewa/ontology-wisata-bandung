@@ -16,12 +16,15 @@
      * template and passing a `String` message.
      *@
     <script type='text/javascript' src='@routes.Assets.versioned("javascripts/index.js")'></script>
-    <div class="navbar navbar-inverse">
+    <div class="navbar">
     <div class="navbar-inner">
         <div class="container">
             <a class="brand" href="#">Test</a>
             <form id="lookclassinstances" class="navbar-form pull-right">
-                <input id="dlquery" type="text" class="span2" placeholder="DLQuery (ex: Desa or Kecamatan)" value="">
+                <div class="form-group">
+                    <label for="dlquery">DLQuery</label>
+                    <input id="dlquery" type="text" class="span2" placeholder="Desa or Kecamatan" value="">
+                </div>
                 <button type="submit" class="btn">Ambil Instances</button>
             </form>
         </div>

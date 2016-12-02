@@ -2,7 +2,7 @@ package services
 
 import javax.inject.{Inject, Singleton}
 
-import org.apache.jena.rdf.model.Statement
+import java.io.File
 import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxEditorParser
 import org.semanticweb.HermiT.Reasoner
 import org.semanticweb.owlapi.apibinding.OWLManager
@@ -19,29 +19,6 @@ import scala.collection.JavaConversions._
   */
 @Singleton
 class OntologyProvider @Inject() (env:Environment) {
-  import java.io.{File, FileInputStream}
-
-  import org.apache.jena.ontology._
-  import org.apache.jena.rdf.model.ModelFactory
-
-  private val is = env.classLoader.getResourceAsStream("wisata-2.owl")
-
-  val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM_RULE_INF);
-
-  model.read(is,null,"RDF/XML")
-
-  is.close()
-
-  def instanceToJson(ontResource: OntResource):JsObject = {
-    ontResource.listProperties().toList
-      .groupBy(s => s.getPredicate.getLocalName)
-      .foldLeft(Json.obj("uri" -> ontResource.getURI,"local_name" -> ontResource.getLocalName))((js,ls) =>
-        {
-          val (key, list_value) = ls
-          js + (key -> JsArray(list_value.map( b => b.getObject.toString).map(JsString(_))))
-        })
-  }
-
   private val manager = OWLManager.createOWLOntologyManager();
   private val ontology = manager
     .loadOntologyFromOntologyDocument(new File(env.classLoader.getResource("wisata.owl").toURI));
@@ -67,10 +44,10 @@ class OntologyProvider @Inject() (env:Environment) {
       .filter(_ match {
         case (AxiomType.OBJECT_PROPERTY_ASSERTION, _) => true
         case (AxiomType.DATA_PROPERTY_ASSERTION, _) => true
+        case (AxiomType.CLASS_ASSERTION, _) => true
         case _ => false
       })
-      .foldRight(Json.obj("uri" -> individual.getIRI.toString,"local_name" -> individual.getIRI.getShortForm))(
-        (gr,js) => {
+      .foldRight(Json.obj("uri" -> individual.getIRI.toString,"local_name" -> individual.getIRI.getShortForm))((gr,js) => {
           gr match {
             case (AxiomType.OBJECT_PROPERTY_ASSERTION,axioms) => {
               val propertyAndSubjects = axioms
@@ -101,6 +78,13 @@ class OntologyProvider @Inject() (env:Environment) {
               })
               val isi:JsValue = Json.toJson(propertyAndSubjects)
               js + ("data_property" -> isi)
+            }
+            case (AxiomType.CLASS_ASSERTION,axioms) => {
+              val propertyAndSubjects = axioms
+                .map(_.asInstanceOf[OWLClassAssertionAxiom].getClassExpression.asOWLClass)
+                .map(a => Json.obj("name" -> shortFormProvider.getShortForm(a), "iri" -> a.getIRI.toString))
+              val isi:JsValue = Json.toJson(propertyAndSubjects)
+              js + ("class_property" -> isi)
             }
           }
         })

@@ -2,7 +2,6 @@ package controllers
 
 import javax.inject._
 
-import org.apache.jena.rdf.model.Statement
 import org.semanticweb.owlapi.model.IRI
 import play.api._
 import play.api.mvc._
@@ -29,23 +28,6 @@ class HomeController @Inject() (ontologyProvider: OntologyProvider) extends Cont
    */
   def index = Action {
     Ok(views.html.index("Your new application is ready."))
-  }
-
-  def getInstances(ontologyClass: String) = Action.async{
-    val model = ontologyProvider.model
-    val artefact = model.getOntClass( baseURI + ontologyClass );
-    val results = artefact.listInstances().toList.filterNot(_.getURI == null)
-      .map( m => ontologyProvider.instanceToJson(m) )
-
-    Future(Ok(Json.toJson(results)))
-  }
-
-  def getInstance(instanceName: String) = Action.async{
-    val model = ontologyProvider.model
-    val artefact = model.getOntResource( baseURI + instanceName )
-    val result = ontologyProvider.instanceToJson(artefact)
-
-    Future(Ok(result))
   }
 
   def getIndividual(individualName: String) = Action.async{

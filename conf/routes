@@ -8,8 +8,6 @@ GET     /                           controllers.HomeController.index
 GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
 GET     /message                    controllers.AsyncController.message
-GET     /instances/:cls             controllers.HomeController.getInstances(cls)
-GET     /instance/:name             controllers.HomeController.getInstance(name)
 GET     /individuals                controllers.HomeController.DLQuery(query)
 GET     /individual/:name           controllers.HomeController.getIndividual(name)
 

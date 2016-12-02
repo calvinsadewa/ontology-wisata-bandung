@@ -75,6 +75,7 @@ ontology.axioms(individual).iterator().toList
   .filter(_ match {
     case (AxiomType.OBJECT_PROPERTY_ASSERTION, _) => true
     case (AxiomType.DATA_PROPERTY_ASSERTION, _) => true
+    case (AxiomType.CLASS_ASSERTION, _) => true
     case _ => false
   })
   .map ( _ match {
@@ -102,6 +103,20 @@ ontology.axioms(individual).iterator().toList
           (property_name,
             axioms
               .map(_.getObject.getLiteral)
+          )
+      })
+      (AxiomType.DATA_PROPERTY_ASSERTION,propertyAndSubjects)
+    }
+    case (AxiomType.CLASS_ASSERTION,axioms) => {
+      val propertyAndSubjects = axioms
+        .map(_.asInstanceOf[OWLClassAssertionAxiom])
+        .groupBy(
+          axiom => shortFormProvider.getShortForm(axiom.getClassExpression.asOWLClass)
+        ).map( _ match {
+        case (property_name, axioms) =>
+          (property_name,
+            axioms
+              .map(_ => "")
           )
       })
       (AxiomType.DATA_PROPERTY_ASSERTION,propertyAndSubjects)
