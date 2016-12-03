@@ -22,6 +22,8 @@ ajaxServer = (query) ->
           .append($("<span>").append($("<a>").text(d['local_name']).attr "href", "/?query="+encodeURIComponent("{" + d['local_name'] + "}"))) \
           .append(':').append(classes)
         panelBody = $("<div>").addClass("panel-body")
+        for k,v of d["data_property"]
+          panelBody.append($("<span>").text(k + ":" + v).addClass("row"))
         for k,v of d["object_property"]
           panelRow = $("<span>").append(k + " : ").addClass("row")
           for item in v
@@ -29,10 +31,15 @@ ajaxServer = (query) ->
               .append($("<a>").text(item["name"]).attr "href", "/?query="+encodeURIComponent("{" + item["name"] + "}")) \
               .append($("<a>").attr("href","/?query="+encodeURIComponent(k + " some {" + item["name"] + "}")).append($("<button>").text("alt")))
             panelRow.append(link)
-            console.log(link)
           panelBody.append(panelRow)
-        for k,v of d["data_property"]
-          panelBody.append($("<span>").text(k + ":" + v).addClass("row"))
+        for k,v of d["inverse_object"]
+          panelRow = $("<span>").addClass("row")
+          for item in v
+            link = $("<span>") \
+              .append($("<a>").text(item["name"]+";").attr "href", "/?query="+encodeURIComponent("{" + item["name"] + "}"))
+            panelRow.append(link)
+          panelRow.append(" " + k + " ").append($("<a>").text(d['local_name']).attr "href", "/?query="+encodeURIComponent("{" + d['local_name'] + "}"))
+          panelBody.append(panelRow)
         panel.append(panelHead)
         panel.append(panelBody)
         instances.append(panel)

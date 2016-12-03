@@ -1,10 +1,8 @@
 import java.io.{File, FileInputStream, InputStream}
-
-import org.apache.jena.ontology._
-import org.apache.jena.riot._
+import java.util
+import java.util.stream.Stream
 
 import scala.collection.JavaConversions._
-import org.apache.jena.rdf.model.{ModelFactory, Statement}
 import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntaxEditorParser
 import org.semanticweb.HermiT.Reasoner
 import org.semanticweb.owlapi.apibinding.OWLManager
@@ -16,15 +14,14 @@ import org.semanticweb.owlapi.model._
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory
 import org.semanticweb.owlapi.util.{BidirectionalShortFormProvider, BidirectionalShortFormProviderAdapter, ShortFormProvider, SimpleShortFormProvider}
+import org.semanticweb.owlapi.search.EntitySearcher
+import org.semanticweb.owlapi.vocab.{OWL2Datatype, OWLFacet}
 
 val owlfile = new File("D:\\Coba PLAY\\ontology-wisata-bandung\\conf\\wisata.owl")
-val is = new FileInputStream(owlfile)
-
 val manager = OWLManager.createOWLOntologyManager();
 val ontology = manager
   .loadOntologyFromOntologyDocument(owlfile);
-
-println(ontology.getOntologyID)
+val datafactory = manager.getOWLDataFactory
 
 val reasoner = new Reasoner.ReasonerFactory().createReasoner(ontology);
 
@@ -122,3 +119,25 @@ ontology.axioms(individual).iterator().toList
       (AxiomType.DATA_PROPERTY_ASSERTION,propertyAndSubjects)
     }
   })
+
+val object_to_ranges = ontology.axioms(AxiomType.OBJECT_PROPERTY_RANGE).iterator.toList
+  .map(a => (a.getProperty.getNamedProperty,a.getRange))
+  .map{
+    case (property,ranges) =>
+      (property,reasoner.getSubClasses(ranges).flatten ++ ranges.getClassesInSignature)
+  }
+  .flatMap{
+    case (property,classes) => classes.map(cls => (cls,property))
+  }
+  .groupBy{
+    case (cls,_) => cls
+  }
+  .map{
+    case (cls,properties) => (cls,properties.map{case (_,p) => p })
+  }
+  .toMap
+
+val property = datafactory.getOWLObjectProperty("http://www.semanticweb.org/paramita/ontologies/2016/10/untitled-ontology-28#memiliki")
+val invProperty = reasoner.getInverseObjectProperties(property)
+reasoner.getTypes(individual,true)
+EntitySearcher.getTypes(individual,ontology).iterator.toSeq.map(b => b.asOWLClass().getIRI.toString).length

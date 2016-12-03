@@ -9,6 +9,7 @@ import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.expression.ShortFormEntityChecker
 import org.semanticweb.owlapi.model._
 import org.semanticweb.owlapi.util.{BidirectionalShortFormProvider, BidirectionalShortFormProviderAdapter, ShortFormProvider, SimpleShortFormProvider}
+import org.semanticweb.owlapi.search._
 import play.api.Environment
 import play.api.libs.json._
 
@@ -26,6 +27,21 @@ class OntologyProvider @Inject() (env:Environment) {
   private val reasoner = new Reasoner.ReasonerFactory().createReasoner(ontology);
   private val shortFormProvider = new SimpleShortFormProvider();
   private val parser = new DLQueryParser(ontology,shortFormProvider)
+  private val class_to_inverse_object_properties = ontology.axioms(AxiomType.OBJECT_PROPERTY_RANGE).iterator.toSeq
+    .map(a => (a.getProperty.getNamedProperty,a.getRange))
+    .map{
+      case (property,ranges) =>
+        (property,reasoner.getSubClasses(ranges).flatten ++ ranges.getClassesInSignature)
+    }
+    .flatMap{
+      case (property,classes) => classes.map((_,property))
+    }
+    .groupBy{
+      case (cls,_) => cls
+    }
+    .map{
+      case (cls,properties) => (cls,properties.map{case (_,p) => p })
+    }.withDefaultValue(Seq())
 
   def getIndividual(iri: IRI): OWLNamedIndividual ={
     factory.getOWLNamedIndividual(iri)
@@ -39,7 +55,11 @@ class OntologyProvider @Inject() (env:Environment) {
   }
 
   def individualToJson(individual: OWLNamedIndividual): JsObject = {
-    ontology.axioms(individual).iterator().toList
+    val classes = EntitySearcher.getTypes(individual,ontology).iterator.toSeq.map(b => b.asOWLClass())
+    val inverse_properties = classes.flatMap(class_to_inverse_object_properties(_)).toSet
+    val inverse_property_to_individuals = inverse_properties
+      .map(ip => (ip,DLInference("%s some {%s}".format(ip.getIRI.getShortForm,individual.getIRI.getShortForm))))
+    val js = ontology.axioms(individual).iterator().toList
       .groupBy(axiom => axiom.getAxiomType).toList
       .filter(_ match {
         case (AxiomType.OBJECT_PROPERTY_ASSERTION, _) => true
@@ -88,6 +108,13 @@ class OntologyProvider @Inject() (env:Environment) {
             }
           }
         })
+    val js2:JsObject = js + ("inverse_object" -> Json.toJson( inverse_property_to_individuals.map{
+      case (ip, individuals) =>
+        (ip.getIRI.getShortForm,
+          individuals
+            .map(a => Json.obj("name" -> shortFormProvider.getShortForm(a), "iri" -> a.getIRI.toString)))
+    }.toMap))
+    js2
   }
 
   private class DLQueryParser(val rootOntology: OWLOntology,
