@@ -23,7 +23,10 @@ ajaxServer = (query) ->
           .append(':').append(classes)
         panelBody = $("<div>").addClass("panel-body")
         for k,v of d["data_property"]
-          panelBody.append($("<span>").text(k + ":" + v).addClass("row"))
+          if (k == 'foto')
+            panelBody.append($("<span>").text(k + ":").append($("a").attr("href",v)).addClass("row"))
+          else
+            panelBody.append($("<span>").text(k + ":" + v).addClass("row"))
         for k,v of d["object_property"]
           panelRow = $("<span>").append(k + " : ").addClass("row")
           for item in v
